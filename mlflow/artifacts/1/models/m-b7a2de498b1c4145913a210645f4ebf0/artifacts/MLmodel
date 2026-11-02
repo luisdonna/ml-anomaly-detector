@@ -1,0 +1,59 @@
+artifact_path: /Users/luisdonnadieu/ml-anomaly-detector/mlflow/artifacts/1/models/m-b7a2de498b1c4145913a210645f4ebf0/artifacts
+flavors:
+  catboost:
+    catboost_version: 1.2.10
+    code: null
+    data: model.cb
+    model_type: CatBoostRegressor
+    save_format: cbm
+  python_function:
+    data: model.cb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.catboost
+    python_version: 3.12.12
+is_signature_from_type_hint: false
+mlflow_version: 3.6.0
+model_id: m-b7a2de498b1c4145913a210645f4ebf0
+model_size_bytes: 8277561
+model_uuid: m-b7a2de498b1c4145913a210645f4ebf0
+prompts: null
+run_id: e1139c0783b6408984ce831ea04596b3
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "WindSpeed", "required": true}, {"type": "double",
+    "name": "WindDirAbs", "required": true}, {"type": "double", "name": "WindDirRel",
+    "required": true}, {"type": "double", "name": "Pitch", "required": true}, {"type":
+    "double", "name": "GenRPM", "required": true}, {"type": "double", "name": "RotorRPM",
+    "required": true}, {"type": "double", "name": "EnvirTemp", "required": true},
+    {"type": "double", "name": "NacelTemp", "required": true}, {"type": "double",
+    "name": "GearOilTemp", "required": true}, {"type": "double", "name": "GearBearTemp",
+    "required": true}, {"type": "double", "name": "GenPh1Temp", "required": true},
+    {"type": "double", "name": "GenBearTemp", "required": true}, {"type": "double",
+    "name": "GenRPM_lag1", "required": true}, {"type": "double", "name": "GenRPM_lag2",
+    "required": true}, {"type": "double", "name": "GenRPM_lag3", "required": true},
+    {"type": "double", "name": "GenPh1Temp_lag1", "required": true}, {"type": "double",
+    "name": "GenPh1Temp_lag2", "required": true}, {"type": "double", "name": "GenPh1Temp_lag3",
+    "required": true}, {"type": "double", "name": "WindSpeed_lag1", "required": true},
+    {"type": "double", "name": "WindSpeed_lag2", "required": true}, {"type": "double",
+    "name": "WindSpeed_lag3", "required": true}, {"type": "double", "name": "GenRPM_roll3_max",
+    "required": true}, {"type": "double", "name": "GenRPM_roll6_max", "required":
+    true}, {"type": "double", "name": "GenPh1Temp_roll3_max", "required": true}, {"type":
+    "double", "name": "GenPh1Temp_roll6_max", "required": true}, {"type": "double",
+    "name": "WindSpeed_roll3_max", "required": true}, {"type": "double", "name": "WindSpeed_roll6_max",
+    "required": true}, {"type": "double", "name": "WindDirAbs_roll3_max", "required":
+    true}, {"type": "double", "name": "WindDirAbs_roll6_max", "required": true}, {"type":
+    "double", "name": "WindDirRel_roll3_max", "required": true}, {"type": "double",
+    "name": "WindDirRel_roll6_max", "required": true}, {"type": "double", "name":
+    "Pitch_roll3_max", "required": true}, {"type": "double", "name": "Pitch_roll6_max",
+    "required": true}, {"type": "double", "name": "RotorRPM_roll3_max", "required":
+    true}, {"type": "double", "name": "RotorRPM_roll6_max", "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-08-20 23:55:48.063205'

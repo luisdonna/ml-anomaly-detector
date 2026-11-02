@@ -1,0 +1,23 @@
+artifact_path: /Users/luisdonnadieu/ml-anomaly-detector/mlflow/artifacts/1/models/m-abf48fc00e6f4f979836d73dab6e0f4b/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.12.12
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.2.2
+mlflow_version: 3.6.0
+model_id: m-abf48fc00e6f4f979836d73dab6e0f4b
+model_size_bytes: 156484
+model_uuid: m-abf48fc00e6f4f979836d73dab6e0f4b
+prompts: null
+run_id: a61daaae5c3742878cb7e7df048e9aad
+utc_time_created: '2026-08-20 23:20:50.972187'

@@ -1,0 +1,22 @@
+artifact_path: /Users/luisdonnadieu/ml-anomaly-detector/mlflow/artifacts/1/models/m-c9461c09aae249199659b654f06668d8/artifacts
+flavors:
+  catboost:
+    catboost_version: 1.2.10
+    code: null
+    data: model.cb
+    model_type: CatBoostRegressor
+    save_format: cbm
+  python_function:
+    data: model.cb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.catboost
+    python_version: 3.12.12
+mlflow_version: 3.6.0
+model_id: m-c9461c09aae249199659b654f06668d8
+model_size_bytes: 40736
+model_uuid: m-c9461c09aae249199659b654f06668d8
+prompts: null
+run_id: 6703cd966c5d41298f183bb7485df5e5
+utc_time_created: '2026-08-20 23:58:06.147164'
