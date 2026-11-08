@@ -115,5 +115,13 @@ select = [
 ]
 ignore = ["E501"]  # Ruff format takes care of line-too-long
 
+[tool.ruff.lint.per-file-ignores]
+# Exploratory notebooks and their helpers use printed diagnostics, long model
+# experiments, inline thresholds, and tensor batches moved to a device in-place.
+# Keep correctness checks (including undefined names and duplicate keys) enabled.
+"notebooks/**" = [
+    "T201", "PLR0912", "PLR0913", "PLR0915", "PLR2004", "PLW2901",
+]
+
 [tool.kedro_telemetry]
 project_id = "e3f1f537ca544bbbbbb121c6f6b9dffa"

@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   lint-and-type:
@@ -19,16 +21,16 @@ jobs:
         run: pip install uv
 
       - name: Install dependencies
-        run: uv sync --extra dev
+        run: uv sync --locked --extra dev
 
       - name: Ruff check
-        run: uv run ruff check .
+        run: uv run --locked ruff check .
 
       - name: Ruff format
-        run: uv run ruff format --check .
+        run: uv run --locked ruff format --check .
 
       - name: Type check
-        run: uv run ty check src tests
+        run: uv run --locked ty check src tests
 
   test:
     runs-on: ubuntu-latest
@@ -44,7 +46,7 @@ jobs:
         run: pip install uv
 
       - name: Install dependencies
-        run: uv sync --extra dev
+        run: uv sync --locked --extra dev
 
       - name: Run tests
-        run: uv run pytest
+        run: uv run --locked pytest

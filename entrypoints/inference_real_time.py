@@ -17,7 +17,7 @@ sys.path.append(str(project_root))
 os.chdir(project_root)
 
 from app_data_manager.data_manager import DataManager  # noqa: E402
-from app_data_manager.utils import read_config  # noqa: I001
+from app_data_manager.utils import read_config  # noqa: E402
 
 
 def run_inference_pipeline(env: str = "local") -> None:
