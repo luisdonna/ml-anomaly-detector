@@ -44,10 +44,10 @@ jobs:
         with:
           host: ${{ secrets.DO_HOST }}
           username: ${{ secrets.DO_USER }}
-          key: ${{ secrets.DO_SSH_KEY }}
+          key: ${{ secrets.DO_PASSWORD }}
           script: |
             set -e
-            cd mlops-accelerator-may-2026
+            cd ~/ml-anomaly-detector
 
             git pull origin main
             

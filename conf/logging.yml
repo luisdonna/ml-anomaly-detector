@@ -25,6 +25,10 @@ handlers:
     encoding: utf8
     delay: True
 
+  prefect:
+    class: prefect.logging.handlers.APILogHandler
+    level: INFO
+     
   rich:
     class: kedro.logging.RichHandler
     rich_tracebacks: True
@@ -40,4 +44,4 @@ loggers:
     level: INFO
 
 root:
-  handlers: [rich, info_file_handler]
+  handlers: [rich, info_file_handler, prefect]
